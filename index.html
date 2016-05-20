@@ -580,39 +580,11 @@
   </div>
 </div>
 
-<div id="googleMap" style="height:400px;width:100%;"></div>
-
-<!-- Add Google Maps -->
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-
-function initialize() {
-var mapProp = {
-  center:myCenter,
-  zoom:12,
-  scrollwheel:false,
-  draggable:false,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-  position:myCenter,
-  });
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
-
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+  <p>Go to the CloudBread main page. <br><a href="http://aka.ms/cbp" title="Visit w3schools">'aka.ms/cbp'</a></p>
 </footer>
 
 <script>
