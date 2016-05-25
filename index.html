@@ -233,33 +233,28 @@
 
 <nav class="navbar navbar-fault navbar-fixed-top">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+    <div class="navbar-header" style="margin-top:8px;">
+      <a href="#myPage">
+        <img src="images/logo-16.svg" style="width:120px; height:30px;"/>
+      </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#pricing">PRICING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#tutorials">TUTORIALS</a></li>
+        <li><a href="#review">REVIEW</a></li>
+        <li><a href="#members">MEMBERS</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="jumbotron text-center">
-  <h1>Company</h1>
-  <p>We specialize in blablabla</p>
-  <form class="form-inline">
-    <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-    <button type="button" class="btn btn-danger" style="background-color:#4C5ACC">Subscribe</button>
-  </form>
+<div class="jumbotron text-center" style="margin-bottom:0px;">
+    <img src="images/type_web-18.svg" style="width:800px; height:500px;"/><br>
+    <button class="btn btn-lg" style="width:234px;">페이스북 공식채널</button>
+    <button class="btn btn-lg" style="width:234px; margin-left:13px;">유튜브 공식채널</button>
+    <button class="btn btn-lg" style="width:234px; margin-left:13px;">Github 프로젝트</button>
 </div>
 
 <!-- Container (About Section) -->
@@ -322,7 +317,6 @@
 <!-- Second paragraph -->
 
 <div id="services" class="container-fluid" style="background-color:#F3F3F3">
-
   <div class="row">
     <div class="col-sm-3 col-xs-12">
       <div style="margin: 104px 0 102px 40px; text-align:left;">
@@ -456,37 +450,104 @@
     <div class="col-sm-1">
     </div>
   </div>
+</div>
 
 <!-- Third paragraph -->
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2><br>
-  <h4>What we have created</h4>
+<!-- Container (Tutorial Section) -->
+<div id="tutorials" class="container-fluid" style="background-color:#F6F6F6;">
+  <div class="row">
+    <div class="col-sm-4 col-xs-12">
+      <div style="margin: 100px 0 76px 10px; text-align:left;">
+        <noto style="font-size:26px; line-height:36px; color:#555F94; font-weight:700;">
+          CloudBread 튜토리얼
+        </noto>
+      </div>
+    </div>
+  </div>
   <div class="row text-center slideanim">
     <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
+      <div class="thumbnail round-panel">
+        <img src="images/tutorial-1.png" alt="Introduce" width="400" height="300"
+          style="border-top-left-radius:10px; border-top-right-radius:10px;">
+        <p><strong>Introduce</strong></p>
+        <p>클라우드 브래드 소개 및 배포</p>
+        <hr>
+        <p> xzxxz</p>
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
+      <div class="thumbnail round-panel">
+        <img src="images/interview.png" alt="Interview" width="400" height="300"
+          style="border-top-left-radius:10px; border-top-right-radius:10px;">
+        <p><strong>Interview</strong></p>
+        <p>클라우드 브래드를 사용한 대표님들의 인터뷰</p>
+        <hr>
+        <p> xzxxz</p>
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
+      <div class="thumbnail round-panel">
+        <img src="images/flappy.png" alt="Example" width="400" height="300"
+          style="border-top-left-radius:10px; border-top-right-radius:10px;">
+        <p><strong>Example</strong></p>
+        <p>클라우드 브래드를 사용하여 게임 만들기</p>
+        <hr>
+        <p> xzxxz</p>
       </div>
     </div>
-  </div><br>
+  </div>
 
-  <h2>What our customers say</h2>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail round-panel">
+        <img src="images/HTTP_.jpeg" alt="Communication" width="400" height="300"
+          style="border-top-left-radius:10px; border-top-right-radius:10px;">
+        <p><strong>Communication</strong></p>
+        <p>Unity와 클라우드 브래드간 HTTP 통신</p>
+        <hr>
+          <a class="tuto_btn" href="." role="button" style="margin:10px;">
+            <span>xxxxxxxx</span>
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail round-panel">
+        <img src="images/unity.jpeg" alt="UnitySDK" width="400" height="300"
+          style="border-top-left-radius:10px; border-top-right-radius:10px;">
+        <p><strong>UnitySDK</strong></p>
+        <p>UnitySDK를 클라우드 브래드에 적용하기</p>
+        <hr>
+        <p> xzxxz</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail round-panel">
+        <img src="images/db.jpeg" alt="Database" width="400" height="300"
+          style="border-top-left-radius:10px; border-top-right-radius:10px;">
+        <p><strong>Database</strong></p>
+        <p>클라우드 브래드로 DB스키마 사용하기</p>
+        <hr>
+        <p> xzxxz</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" style="background-color:#F4F4F4;">
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div style="margin: 100px 0 0 10px; text-align:left;">
+        <noto style="font-size:26px; line-height:36px; color:#555F94; font-weight:700;">
+          CloudBread 후기
+        </noto>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="background-color:#F4F4F4;">
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -518,13 +579,15 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  <div style="padding-top:150px;"/>
 </div>
 
+
 <!-- Last paragraph -->
-<!-- Container (Contact Section) -->
-<div id="contact" class="container" style="background-color:#EFEFEF">
-  <div style="text-align:Left; margin-left:20px; margin-bottom:123px;">
-    <noto style="font-size:24px">CloudBread를 함께하는 사람들</noto>
+<!-- Container (Member Section) -->
+<div id="Members" class="container-fluid" style="background-color:#EFEFEF">
+  <div style="text-align:Left; margin-top:100px; margin-left:10px; margin-bottom:123px;">
+    <noto style="font-size:24px; color:#2A69B2;">CloudBread를 함께하는 사람들</noto>
   </div>
   <div class="row" style="text-align:left;">
     <div class="col-sm-3 slideanim" style="text-align:center;">
@@ -591,7 +654,7 @@
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Go to the CloudBread main page. <br><a href="http://aka.ms/cbp" title="Visit w3schools">'aka.ms/cbp'</a></p>
+  <p>Go to the CloudBread main page. <br><a href="http://aka.ms/cbp">'aka.ms/cbp'</a></p>
 </footer>
 
 <script>
