@@ -30,6 +30,17 @@
       font-weight: 400;
       margin-bottom: 30px;
   }
+  p {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 350;
+  }
+  a {
+      border-bottom: 0px;
+      text-decoration: none;
+  }
+  a:hover {
+      text-decoration: none;
+  }
   .jumbotron {
       background-image: url(images/main_image-15.svg);
       color: #fff;
@@ -37,7 +48,7 @@
       font-family: Montserrat, sans-serif;
   }
   .container-fluid {
-      padding: 60px 50px;
+    padding: 60px 50px;
   }
   .bg-grey {
       background-color: #f6f6f6;
@@ -90,8 +101,11 @@
   }
   .panel-footer .btn:hover {
       border: 1px solid #4C5ACC;
-      background-color: #fff !important;
+      background-color: #4C5ACC !important;
       color: #4C5ACC;
+  }
+  .tuto_btn:hover {
+      color: #777777;
   }
   .panel-heading {
       color: #fff !important;
@@ -113,10 +127,27 @@
       color: #aaa;
       font-size: 14px;
   }
-  .panel-footer .btn {
+  .panel-footer {
       margin: 15px 0;
       background-color: #4C5ACC;
       color: #fff;
+  }
+  .btn {
+    margin: 15px 0;
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    font-family: AppleSDGothicNeo-Regular;
+    font-size: 22px;
+    color: #FFFFFF;
+    background-color: #4C5ACC;
+    line-height: 24px;
+    opacity:.8;
+    height:73px;
+  }
+  .tuto_btn {
+    margin: 10px;
+    background-color: #FFFFFF;
+    color: #333333;
   }
   .navbar {
       margin-bottom: 0;
@@ -139,6 +170,9 @@
   .navbar-default .navbar-toggle {
       border-color: transparent;
       color: #fff !important;
+  }
+  .round-panel {
+    border-radius: 10px;
   }
   footer .glyphicon {
       font-size: 20px;
@@ -179,7 +213,7 @@
       margin: 25px 0;
     }
     .btn-lg {
-        width: 100%;
+        width: 234px;
         margin-bottom: 35px;
     }
   }
