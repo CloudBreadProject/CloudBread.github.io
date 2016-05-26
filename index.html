@@ -174,6 +174,30 @@
   .round-panel {
     border-radius: 10px;
   }
+  .single-more-features{
+    position:relative;
+  	padding-left:90px;
+  	margin-bottom:60px;
+  }
+  .single-more-features img{
+    position:absolute;
+    top:0;
+    left:0;
+  }
+  .single-more-features h6{
+    position:relative;
+    padding-bottom:10px;
+    margin-bottom:12px;
+  }
+  .single-more-features h6:after{
+    position:absolute;
+    bottom:0;
+    left:0;
+    content:"";
+    height:1px;
+    width:50px;
+    background-color:#4C5ACC;
+  }
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
@@ -263,9 +287,11 @@
 
 <div class="jumbotron text-center" style="margin-bottom:0px;">
 
-    <div class="row">
-      <div class="col-xs-1 col-sm-2 col-md-2 col-lg-3"></div>
-      <div class="col-xs-10 col-sm-8 col-md-8 col-lg-6" style="text-align:left">
+    <div class="row" style="margin-bottom:50px;">
+      <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
+      <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6" style="text-align:center;">
+        <img src="images/type_web-18.svg"/>
+        <!--
         <appleSD style="font-size:38px; color:#F3F3F3; letter-spacing:0.92px; line-height:59px;">
           세상 모든 클라이언트 개발자를 위한<br>
           <mainfontY>
@@ -277,18 +303,22 @@
         <div style="font-weight:700; font-size:48px; color: #FFE161; letter-spacing: 1.16px; line-height: 59px; text-align:center; margin-top:21px; margin-bottom:58px;">
           CloudBread
         </div>
+      -->
       </div>
-      <div class="col-xs-1 col-sm-2 col-md-2 col-lg-3"></div>
+      <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
     </div>
     <button class="btn btn-lg"
       onclick="location='https://www.facebook.com/groups/cloudBreadProject/'"
       style="width:234px;">페이스북 공식채널</button>
+    <span style="margin-left:13px;"></span>
     <button class="btn btn-lg"
       onclick="location='https://www.youtube.com/channel/UCDlkeUYAb851WkHMRzchLzw'"
-      style="width:234px; margin-left:13px;">유튜브 공식채널</button>
+      style="width:234px;">유튜브 공식채널</button>
+    <span style="margin-left:13px;"></span>
     <button class="btn btn-lg"
       onclick="location='https://github.com/CloudBreadProject'"
-      style="width:234px; margin-left:13px;">Github 프로젝트</button>
+      style="width:234px;">Github 프로젝트</button>
+      <span style="margin-left:13px;"></span>
 </div>
 
 <!-- Container (About Section) -->
@@ -352,136 +382,99 @@
 
 <div id="services" class="container-fluid" style="background-color:#F3F3F3">
   <div class="row">
-    <div class="col-sm-3 col-xs-12">
+    <div class="col-md-10">
       <div style="margin: 104px 0 102px 40px; text-align:left;">
         <noto style="font-size:26px; line-height:36px; color:#555F94; font-weight:700;">
           CloudBread 의 특징
         </noto>
       </div>
     </div>
-    <div class="col-sm-8 col-xs-12" style="margin: 104px 0 102px 40px; text-align:left;">
-      <noto style="font-size:18px; line-height:36px; color:#555555;">
-        CloudBread 는 Microsoft Azure 를 바탕으로 만들어진 오픈소스의 프로젝트입니다.<br>
-        CloudBread 의 다양한 프로젝트들이 진행되고 있으며, 이로 인해 다음과 같은 특징을 가질 수 있게 되었습니다.
-      </noto>
-    </div>
+    <div class="col-md-2"></div>
   </div>
 
-  <div class="row slideanim">
-    <div class="col-sm-3" style="text-align:center; margin-bottom:77px;">
-      <img src="images/2-1.png" style="height:128px; width:92px; margin-top:10px; margin-left:35%"/>
-    </div>
-    <div class="col-sm-8" style="text-align:left; margin-left:40px">
-      <noto style="font-size:24px; color:#515151;">
-        게임 보안 인증 기능<br>
-      </noto>
-      <div style="margin-bottom:23px;">
+  <div class="row">
+    <div class="col-md-4 col-sm-6 slideanim">
+      <div class="single-more-features">
+        <img src="images/2-1.png" style="width:55px; height:80px;"/>
+        <h6 style="font-size:24px; color:#515151;">
+          <noto>게임 보안 인증 기능</noto>
+        </h6>
+        <p style="font-size:16px; line-height:28px; color:#5D5B5B;">
+          <noto>
+            CloudBread는 Azure를 백본으로 사용하므로, Azure에서 제공하는 보안 기능을 사용가능.
+          </noto>
+        </p>
       </div>
-      <noto style="font-size:16px; line-height:28px; color:#5D5B5B;">
-        CloudBread는 Microsoft의 Azure 를 백본으로 사용합니다. Azure에서 제공하는 보안 기능
-        을 사용하면 DB 에 대한 해킹 위험, 통신 프로토콜 패킷 해킹 등에 대한 위험을 줄일 수 있습니다.
-         또한 CloudBread 에서는 암호화 패킷을 통신 때문에 게임 보안에 대한 걱정을 줄일 수 있습니다.
-       </noto>
     </div>
-    <div class="col-sm-1">
-    </div>
-  </div>
 
-  <div class="row slideanim">
-    <div class="col-sm-3" style="text-align:center; margin-bottom:77px;">
-      <img src="images/2-2.png" style="height:140px; width:87px; margin-top:10px; margin-left:35%"/>
-    </div>
-    <div class="col-sm-8" style="text-align:left; margin-left:40px; margin-top:23px;">
-      <noto style="font-size:24px; color:#515151;">
-        다양한 게임 라이브러리 제공<br>
-      </noto>
-      <div style="margin-bottom:23px;">
+    <div class="col-md-4 col-sm-6 slideanim">
+      <div class="single-more-features">
+        <img src="images/2-2.png" style="width:55px; height:80px;"/>
+        <h6 style="font-size:24px; color:#515151;">
+          <noto>다양한 라이브러리 제공</noto>
+        </h6>
+        <p style="font-size:16px; line-height:28px; color:#5D5B5B;">
+          <noto>
+            모바일 게임에 특화된 SNS, 채팅 공지 등 100여가지 게임 라이브러리를 제공.
+          </noto>
+        </p>
       </div>
-      <noto style="font-size:16px; line-height:28px; color:#5D5B5B;">
-        CloudBread 는 약 100여가지의 게임 라이브러리를 제공합니다. 또한 모바일 게임에 특화된 SNS
-        기능, 채팅 기능 등을 제공하기 때문에, 필요한 라이브러리만 선택해서 사용함으로써, 서버 로직 개
-        발에 대한 수고를 줄일 수 있습니다.
-       </noto>
     </div>
-    <div class="col-sm-1">
-    </div>
-  </div>
 
-  <div class="row slideanim">
-    <div class="col-sm-3" style="text-align:center; margin-bottom:77px;">
-      <img src="images/2-3.png" style="height:136.5px; width:95px; margin-top:10px; margin-left:35%"/>
-    </div>
-    <div class="col-sm-8" style="text-align:left; margin-left:40px">
-      <noto style="font-size:24px; color:#515151;">
-        Dev-Ops 지향 관리자웹 제공<br>
-      </noto>
-      <div style="margin-bottom:23px;">
+    <div class="col-md-4 col-sm-6 slideanim">
+      <div class="single-more-features">
+        <img src="images/2-3.png" style="width:55px; height:80px;"/>
+        <h6 style="font-size:24px; color:#515151;">
+          <noto>Dev-Ops지향 관리자웹 제공</noto>
+        </h6>
+        <p style="font-size:16px; line-height:28px; color:#5D5B5B;">
+          <noto>
+            모바일 게임에 특화된 SNS, 채팅 공지 등 100여가지 게임 라이브러리를 제공.
+          </noto>
+        </p>
       </div>
-      <noto style="font-size:16px; line-height:28px; color:#5D5B5B;">
-        CloudBread 는 게임 운영을 효율적으로 하기 위한 관리자 웹을 제공합니다. 이 웹에서 데이터베이
-        스 CRUD 기능을 사용 할 수 있으며, 쿠폰 관리, 푸시메시지 관리 등의 기능을 사용할 수 있습니다.
-         이를 통해 게임 개발에서 운영까지 한번에 해결 할 수 있습니다.
-       </noto>
     </div>
-    <div class="col-sm-1">
-    </div>
-  </div>
 
-  <div class="row slideanim">
-    <div class="col-sm-3" style="text-align:center; margin-bottom:77px;">
-      <img src="images/2-4.png" style="height:127.3px; width:89px; margin-top:10px; margin-left:35%"/>
-    </div>
-    <div class="col-sm-8" style="text-align:left; margin-left:40px">
-      <noto style="font-size:24px; color:#515151;">
-        다양한 프로젝트 진행<br>
-      </noto>
-      <div style="margin-bottom:23px;">
+    <div class="col-md-4 col-sm-6 slideanim">
+      <div class="single-more-features">
+        <img src="images/2-4.png" style="width:55px; height:80px;"/>
+        <h6 style="font-size:24px; color:#515151;">
+          <noto>다양한 프로젝트 진행</noto>
+        </h6>
+        <p style="font-size:16px; line-height:28px; color:#5D5B5B;">
+          <noto>
+            오픈소스 프로젝트로 CloudBread 에서 여러 프로젝트가 진행중.
+          </noto>
+        </p>
       </div>
-      <noto style="font-size:16px; line-height:28px; color:#5D5B5B;">
-        CloudBread 는 오픈소스 프로젝트 입니다. 실제로 CloudBread 안에서 여러 프로젝트가 진행중
-        입니다. 관리자 웹 프로젝트, Unity SDK 등 CloudBread 에 필요한 프로젝트가 진행중이며, 앞
-        으로도 계속 추가해 나갈 계획입니다.
-       </noto>
     </div>
-    <div class="col-sm-1">
-    </div>
-  </div>
 
-  <div class="row slideanim">
-    <div class="col-sm-3" style="text-align:center; margin-bottom:77px;">
-      <img src="images/2-5.png" style="height:108.7px; width:87px; margin-top:10px; margin-left:35%"/>
-    </div>
-    <div class="col-sm-8" style="text-align:left; margin-left:40px">
-      <noto style="font-size:24px; color:#515151;">
-        도큐멘테이션 및 예제 제공<br>
-      </noto>
-      <div style="margin-bottom:23px;">
+    <div class="col-md-4 col-sm-6 slideanim">
+      <div class="single-more-features">
+        <img src="images/2-5.png" style="width:55px; height:80px;"/>
+        <h6 style="font-size:24px; color:#515151;">
+          <noto>도큐멘테이션 및 예제 제공</noto>
+        </h6>
+        <p style="font-size:16px; line-height:28px; color:#5D5B5B;">
+          <noto>
+            CloudBread 사용자분과 저희 팀원들의 상생을 위해, 다양한 문서 및 예제 제공.
+          </noto>
+        </p>
       </div>
-      <noto style="font-size:16px; line-height:28px; color:#5D5B5B;">
-        CloudBread 는 개발자들을 위한 다큐멘테이션과 예제를 제공합니다. 저희 CloudBread 를 공부
-        하고, 사용하시는 개발자분들과 저희 프로젝트의 팀원들과의 상생을 위해, 다양한 방법으로 다큐멘테
-        이션과 예제를 제공하고 있습니다.
-       </noto>
     </div>
-    <div class="col-sm-1">
-    </div>
-  </div>
-  <div class="row slideanim">
-    <div class="col-sm-3" style="text-align:center; margin-bottom:77px;">
-      <img src="images/2-6.png" style="height:131.5px; width:106px; margin-top:10px; margin-left:35%"/>
-    </div>
-    <div class="col-sm-8" style="text-align:left; margin-left:40px">
-      <noto style="font-size:24px; color:#515151;">
-        머신러닝을 사용한 사용자 분석<br>
-      </noto>
-      <div style="margin-bottom:23px;">
+
+    <div class="col-md-4 col-sm-6 slideanim">
+      <div class="single-more-features">
+        <img src="images/2-6.png" style="width:55px; height:80px;"/>
+        <h6 style="font-size:24px; color:#515151;">
+          <noto>머신러닝을 사용한 사용자 분석</noto>
+        </h6>
+        <p style="font-size:16px; line-height:28px; color:#5D5B5B;">
+          <noto>
+            게임을 운영하는 분들을 위해 사용자 분석 알고리즘 개발중. [ 추후 추가될 예정 ]
+          </noto>
+        </p>
       </div>
-      <noto style="font-size:16px; line-height:28px; color:#5D5B5B;">
-        CloudBread 는 실제 게임을 운영하는 분들의 성공을 위해 사용자 분석 알고리즘을 개발하고 있습
-        니다. 머신러닝을 활용하여 알고리즘을 개발을 진행하고 있으며, 추후에 추가될 예정입니다.
-       </noto>
-    </div>
-    <div class="col-sm-1">
     </div>
   </div>
 </div>
@@ -639,61 +632,73 @@
 
 <!-- Last paragraph -->
 <!-- Container (Member Section) -->
-<div id="members" class="container-fluid" style="background-color:#EFEFEF">
+<div id="members" class="container-fluid" style="background-color:#EFEFEF; padding:0 55px 0 25px;">
   <div style="text-align:Left; margin-top:100px; margin-left:10px; margin-bottom:123px;">
     <noto style="font-size:24px; color:#2A69B2;">CloudBread를 함께하는 사람들</noto>
   </div>
   <div class="row" style="text-align:left;">
-    <div class="col-sm-3 slideanim" style="text-align:center;">
+    <div class="col-xs-1 col-sm-4 col-md-4 col-lg-3 slideanim" style="text-align:center;">
       <img src="images/4-1.png"/>
     </div>
-    <div class="col-sm-3 slideanim">
-      <noto style="font-size:30px; color:#2A69B2; margin-bottom:17px;">
-        김대우
-      </noto><br>
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3 slideanim">
+      <div style="margin-bottom:28px;">
+        <noto style="font-size:30px; color:#2A69B2;">
+          김대우
+        </noto>
+      </div>
       <noto style="font-size:13px; color:#484848; line-height:36px;">
         CloudBread 프로젝트 Founder<br>
         CloudBread 프로젝트 Core 개발 중<br>
         웹과 개발자의 일상을 더 재미있게 만드는 일에 관심이 많습니다.
       </noto>
+      <div style="margin-bottom:59px;"></div>
     </div>
-    <div class="col-sm-3 slideanim" style="text-align:center;">
+
+    <div class="col-xs-1 col-sm-4 col-md-4 col-lg-3 slideanim" style="text-align:center;">
       <img src="images/4-2.png"/>
     </div>
-    <div class="col-sm-3 slideanim">
-      <noto style="font-size:30px; color:#2A69B2; margin-bottom:17px;">
-        홍윤석
-      </noto><br>
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3 slideanim">
+      <div style="margin-bottom:28px;">
+        <noto style="font-size:30px; color:#2A69B2;">
+          홍윤석
+        </noto>
+      </div>
       <noto style="font-size:13px; color:#484848; line-height:36px;">
         CloudBread 프로젝트 Contributor<br>
-        Core 및 Unity, Unreal, iOS, Android 에서 지원되는 클라이언트용 리소스 개발.<br>
+        Core 및 Unity, Unreal, iOS, Android 를 위한 클라이언트용 리소스 개발.<br>
         CloudBread Admin Web 프로젝트 개발중
       </noto>
     </div>
   </div>
-
-  <div class="row" style="text-align:left; margin-top:124px; margin-bottom:124px;">
-    <div class="col-sm-3 slideanim" style="text-align:center;">
+  <div style="margin-bottom:40px;"></div>
+  <div class="row" style="text-align:left;">
+    <div class="col-xs-1 col-sm-4 col-md-4 col-lg-3 slideanim" style="text-align:center;">
       <img src="images/4-3.png"/>
     </div>
-    <div class="col-sm-3 slideanim">
-      <noto style="font-size:30px; color:#2A69B2; margin-bottom:17px;">
-        김정현
-      </noto><br>
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3 slideanim">
+      <div style="margin-bottom:28px;">
+        <noto style="font-size:30px; color:#2A69B2;">
+          김정현
+        </noto>
+      </div>
       <noto style="font-size:13px; color:#484848; line-height:36px;">
         CloudBread 프로젝트 Contributor<br>
-        ARM을 통한 리소스 배포 및 BI 및 머신러닝을
-        통한 데이터 분석 서비스 개발.<br>
+        ARM을 통한 리소스 배포 개발.
+        BI 및 머신러닝을 통한 데이터 분석 서비스 개발.<br>
         CloudBread Admin Web 프로젝트 개발 중
       </noto>
+      <div style="margin-bottom:59px;"></div>
     </div>
-    <div class="col-sm-3 slideanim" style="text-align:center;">
+
+    <div class="col-xs-1 col-sm-4 col-md-4 col-lg-3 slideanim" style="text-align:center;">
       <img src="images/4-4.png"/>
     </div>
-    <div class="col-sm-3 slideanim">
-      <noto style="font-size:30px; color:#2A69B2; margin-bottom:17px;">
-        한바환
-      </noto><br>
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3 slideanim">
+      <div style="margin-bottom:28px;">
+        <noto style="font-size:30px; color:#2A69B2;">
+          한바환
+        </noto>
+      </div>
       <noto style="font-size:13px; color:#484848; line-height:36px;">
         CloudBread 프로젝트 Contributor<br>
         실시간 Socket.io 통신 서비스 구축.<br>
@@ -702,6 +707,7 @@
       </noto>
     </div>
   </div>
+  <div style="margin-bottom:80px;"></div>
 </div>
 
 <footer class="container-fluid text-center">
