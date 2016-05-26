@@ -30,24 +30,35 @@
       font-weight: 400;
       margin-bottom: 30px;
   }
+  p {
+      font-family: 'Noto Sans KR', sans-serif;
+      font-weight: 350;
+  }
+  a {
+      border-bottom: 0px;
+      text-decoration: none;
+  }
+  a:hover {
+      text-decoration: none;
+  }
   .jumbotron {
-      background-color: #f4511e;
+      background-image: url(images/main_image-15.svg);
       color: #fff;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
   }
   .container-fluid {
-      padding: 60px 50px;
+    padding: 60px 50px;
   }
   .bg-grey {
       background-color: #f6f6f6;
   }
   .logo-small {
-      color: #f4511e;
+      color: #4C5ACC;
       font-size: 50px;
   }
   .logo {
-      color: #f4511e;
+      color: #4C5ACC;
       font-size: 200px;
   }
   .thumbnail {
@@ -62,13 +73,13 @@
   }
   .carousel-control.right, .carousel-control.left {
       background-image: none;
-      color: #f4511e;
+      color: #4C5ACC;
   }
   .carousel-indicators li {
-      border-color: #f4511e;
+      border-color: #4C5ACC;
   }
   .carousel-indicators li.active {
-      background-color: #f4511e;
+      background-color: #4C5ACC;
   }
   .item h4 {
       font-size: 19px;
@@ -81,7 +92,7 @@
       font-style: normal;
   }
   .panel {
-      border: 1px solid #f4511e;
+      border: 1px solid #4C5ACC;
       border-radius:0 !important;
       transition: box-shadow 0.5s;
   }
@@ -89,13 +100,16 @@
       box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
   .panel-footer .btn:hover {
-      border: 1px solid #f4511e;
-      background-color: #fff !important;
-      color: #f4511e;
+      border: 1px solid #4C5ACC;
+      background-color: #4C5ACC !important;
+      color: #4C5ACC;
+  }
+  .tuto_btn:hover {
+      color: #777777;
   }
   .panel-heading {
       color: #fff !important;
-      background-color: #f4511e !important;
+      background-color: #4C5ACC !important;
       padding: 25px;
       border-bottom: 1px solid transparent;
       border-top-left-radius: 0px;
@@ -113,14 +127,31 @@
       color: #aaa;
       font-size: 14px;
   }
-  .panel-footer .btn {
+  .panel-footer {
       margin: 15px 0;
-      background-color: #f4511e;
+      background-color: #4C5ACC;
       color: #fff;
+  }
+  .btn {
+    margin: 15px 0;
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    font-family: AppleSDGothicNeo-Regular;
+    font-size: 22px;
+    color: #FFFFFF;
+    background-color: #4C5ACC;
+    line-height: 24px;
+    opacity:.8;
+    height:73px;
+  }
+  .tuto_btn {
+    margin: 10px;
+    background-color: #FFFFFF;
+    color: #333333;
   }
   .navbar {
       margin-bottom: 0;
-      background-color: #f4511e;
+      background-color: #4C5ACC;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -130,20 +161,23 @@
       font-family: Montserrat, sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
+      color: #fff;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #f4511e !important;
+      color: #4C5ACC !important;
       background-color: #fff !important;
   }
   .navbar-default .navbar-toggle {
       border-color: transparent;
       color: #fff !important;
   }
+  .round-panel {
+    border-radius: 10px;
+  }
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
-      color: #f4511e;
+      color: #4C5ACC;
   }
   .slideanim {visibility:hidden;}
   .slide {
@@ -179,7 +213,7 @@
       margin: 25px 0;
     }
     .btn-lg {
-        width: 100%;
+        width: 234px;
         margin-bottom: 35px;
     }
   }
@@ -188,141 +222,352 @@
         font-size: 150px;
     }
   }
+  @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+  noto{
+	   font-family: 'Noto Sans KR', sans-serif;
+     font-weight: 350;
+  }
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-fault navbar-fixed-top">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+    <div class="navbar-header" style="margin-top:8px;">
+      <a href="#myPage">
+        <img src="images/logo-16.svg" style="width:120px; height:30px;"/>
+      </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#pricing">PRICING</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="#about" style="color:#FFE161;">ABOUT</a></li>
+        <li><a href="#services" style="color:#FFE161;">SERVICES</a></li>
+        <li><a href="#tutorials" style="color:#FFE161;">TUTORIALS</a></li>
+        <li><a href="#review" style="color:#FFE161;">REVIEW</a></li>
+        <li><a href="#members" style="color:#FFE161;">MEMBERS</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="jumbotron text-center">
-  <h1>Company</h1>
-  <p>We specialize in blablabla</p>
-  <form class="form-inline">
-    <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-    <button type="button" class="btn btn-danger">Subscribe</button>
-  </form>
+<div class="jumbotron text-center" style="margin-bottom:0px;">
+    <img src="images/type_web-18.svg" style="width:800px; height:500px;"/><br>
+    <button class="btn btn-lg"
+      onclick="location='https://www.facebook.com/groups/cloudBreadProject/'"
+      style="width:234px;">페이스북 공식채널</button>
+    <button class="btn btn-lg"
+      onclick="location='https://www.youtube.com/channel/UCDlkeUYAb851WkHMRzchLzw'"
+      style="width:234px; margin-left:13px;">유튜브 공식채널</button>
+    <button class="btn btn-lg"
+      onclick="location'https://github.com/CloudBreadProject'"
+      style="width:234px; margin-left:13px;">Github 프로젝트</button>
 </div>
 
 <!-- Container (About Section) -->
-<div id="about" class="container-fluid">
+<!-- First paragraph -->
+<div id="about" class="container-fluid" style="background-color:#F6F6F6;">
   <div class="row">
-    <div class="col-sm-8">
-      <h2>About Company Page</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    <div class="col-sm-4 col-xs-12">
+      <div style="margin: 94px 0 102px 40px; text-align:left;">
+        <noto style="font-size:26px; line-height:36px; color:#555F94; font-weight:700;">
+          CloudBread 란?
+        </noto>
+      </div>
     </div>
     <div class="col-sm-8">
-      <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-xs-12">
+      <div style="text-align:center;">
+        <img src="images/1-1.png" style="height:183px; width:106px; margin-bottom:41px;"/>
+        <noto style="font-size:24px; line-height:36px; color:#747474; text-align:justify; font-weight:500;">
+          <br>PaaS Cloud
+        </noto>
+      </div>
+      <div style="margin:0 10% 0 10%;">
+        <noto style="font-size:16px; line-height:32px; color:#6d6d6d; letter-spacing:-0.3px;">
+          <br>ClouBread는 PaaS 클라우드에 최적화된 엔진입니다. PaaS 에서 제공하는 여러 서버 리소스들을 효율적으로 활용합니다.
+        </noto>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12">
+      <div style="text-align:center;">
+        <img src="images/1-2.png" style="height:176px; width:99px; margin-bottom:49px;"/>
+        <noto style="font-size:24px; line-height:36px; color:#747474; text-align:justify; font-weight:500;">
+          <br>오픈소스 프로젝트
+        </noto>
+      </div>
+      <div style="margin:0 10% 0 10%;">
+        <noto style="font-size:16px; line-height:32px; color:#6d6d6d;">
+          <br>CloudBread는 MIT 라이센스스를 채택하고 있기 때문에 누구라고 쉽게 프로젝트 수정 및 재배포가 가능합니다.
+        </noto>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12">
+      <div style="text-align:center;">
+        <img src="images/1-3.png" style="height:171px; width:111px; margin-bottom:52px;"/>
+        <noto style="font-size:24px; line-height:36px; color:#747474; text-align:justify; font-weight:500;">
+          <br>모바일 게임 최적화 엔진
+        </noto>
+      </div>
+      <div style="margin:0 10% 0 10%;">
+        <noto style="font-size:16px; line-height:32px; color:#6d6d6d;">
+          <br>CloudBread는 모바일 게임을 빠르게 제작 할 수 있도록 도와줍니다. 제공되는 라이브러리들을 사용하면, 모바일 게임에 필요한 로직, 특화 기능 등을 구현 할 필요가 없어집니다.
+        </noto>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-  <h2>SERVICES</h2>
-  <h4>What we offer</h4>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>POWER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+<!-- Second paragraph -->
+
+<div id="services" class="container-fluid" style="background-color:#F3F3F3">
+  <div class="row">
+    <div class="col-sm-3 col-xs-12">
+      <div style="margin: 104px 0 102px 40px; text-align:left;">
+        <noto style="font-size:26px; line-height:36px; color:#555F94; font-weight:700;">
+          CloudBread 의 특징
+        </noto>
+      </div>
     </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+    <div class="col-sm-8 col-xs-12" style="margin: 104px 0 102px 40px; text-align:left;">
+      <noto style="font-size:18px; line-height:36px; color:#555555;">
+        CloudBread 는 Microsoft Azure 를 바탕으로 만들어진 오픈소스의 프로젝트입니다.<br>
+        CloudBread 의 다양한 프로젝트들이 진행되고 있으며, 이로 인해 다음과 같은 특징을 가질 수 있게 되었습니다.
+      </noto>
     </div>
   </div>
-  <br><br>
+
   <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+    <div class="col-sm-3" style="text-align:center; margin-bottom:77px;">
+      <img src="images/2-1.png" style="height:128px; width:92px; margin-top:10px; margin-left:35%"/>
     </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+    <div class="col-sm-8" style="text-align:left; margin-left:40px">
+      <noto style="font-size:24px; color:#515151;">
+        게임 보안 인증 기능<br>
+      </noto>
+      <div style="margin-bottom:23px;">
+      </div>
+      <noto style="font-size:16px; line-height:28px; color:#5D5B5B;">
+        CloudBread는 Microsoft의 Azure 를 백본으로 사용합니다. Azure에서 제공하는 보안 기능
+        을 사용하면 DB 에 대한 해킹 위험, 통신 프로토콜 패킷 해킹 등에 대한 위험을 줄일 수 있습니다.
+         또한 CloudBread 에서는 암호화 패킷을 통신 때문에 게임 보안에 대한 걱정을 줄일 수 있습니다.
+       </noto>
     </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+    <div class="col-sm-1">
+    </div>
+  </div>
+
+  <div class="row slideanim">
+    <div class="col-sm-3" style="text-align:center; margin-bottom:77px;">
+      <img src="images/2-2.png" style="height:140px; width:87px; margin-top:10px; margin-left:35%"/>
+    </div>
+    <div class="col-sm-8" style="text-align:left; margin-left:40px; margin-top:23px;">
+      <noto style="font-size:24px; color:#515151;">
+        다양한 게임 라이브러리 제공<br>
+      </noto>
+      <div style="margin-bottom:23px;">
+      </div>
+      <noto style="font-size:16px; line-height:28px; color:#5D5B5B;">
+        CloudBread 는 약 100여가지의 게임 라이브러리를 제공합니다. 또한 모바일 게임에 특화된 SNS
+        기능, 채팅 기능 등을 제공하기 때문에, 필요한 라이브러리만 선택해서 사용함으로써, 서버 로직 개
+        발에 대한 수고를 줄일 수 있습니다.
+       </noto>
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+
+  <div class="row slideanim">
+    <div class="col-sm-3" style="text-align:center; margin-bottom:77px;">
+      <img src="images/2-3.png" style="height:136.5px; width:95px; margin-top:10px; margin-left:35%"/>
+    </div>
+    <div class="col-sm-8" style="text-align:left; margin-left:40px">
+      <noto style="font-size:24px; color:#515151;">
+        Dev-Ops 지향 관리자웹 제공<br>
+      </noto>
+      <div style="margin-bottom:23px;">
+      </div>
+      <noto style="font-size:16px; line-height:28px; color:#5D5B5B;">
+        CloudBread 는 게임 운영을 효율적으로 하기 위한 관리자 웹을 제공합니다. 이 웹에서 데이터베이
+        스 CRUD 기능을 사용 할 수 있으며, 쿠폰 관리, 푸시메시지 관리 등의 기능을 사용할 수 있습니다.
+         이를 통해 게임 개발에서 운영까지 한번에 해결 할 수 있습니다.
+       </noto>
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+
+  <div class="row slideanim">
+    <div class="col-sm-3" style="text-align:center; margin-bottom:77px;">
+      <img src="images/2-4.png" style="height:127.3px; width:89px; margin-top:10px; margin-left:35%"/>
+    </div>
+    <div class="col-sm-8" style="text-align:left; margin-left:40px">
+      <noto style="font-size:24px; color:#515151;">
+        다양한 프로젝트 진행<br>
+      </noto>
+      <div style="margin-bottom:23px;">
+      </div>
+      <noto style="font-size:16px; line-height:28px; color:#5D5B5B;">
+        CloudBread 는 오픈소스 프로젝트 입니다. 실제로 CloudBread 안에서 여러 프로젝트가 진행중
+        입니다. 관리자 웹 프로젝트, Unity SDK 등 CloudBread 에 필요한 프로젝트가 진행중이며, 앞
+        으로도 계속 추가해 나갈 계획입니다.
+       </noto>
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+
+  <div class="row slideanim">
+    <div class="col-sm-3" style="text-align:center; margin-bottom:77px;">
+      <img src="images/2-5.png" style="height:108.7px; width:87px; margin-top:10px; margin-left:35%"/>
+    </div>
+    <div class="col-sm-8" style="text-align:left; margin-left:40px">
+      <noto style="font-size:24px; color:#515151;">
+        도큐멘테이션 및 예제 제공<br>
+      </noto>
+      <div style="margin-bottom:23px;">
+      </div>
+      <noto style="font-size:16px; line-height:28px; color:#5D5B5B;">
+        CloudBread 는 개발자들을 위한 다큐멘테이션과 예제를 제공합니다. 저희 CloudBread 를 공부
+        하고, 사용하시는 개발자분들과 저희 프로젝트의 팀원들과의 상생을 위해, 다양한 방법으로 다큐멘테
+        이션과 예제를 제공하고 있습니다.
+       </noto>
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-3" style="text-align:center; margin-bottom:77px;">
+      <img src="images/2-6.png" style="height:131.5px; width:106px; margin-top:10px; margin-left:35%"/>
+    </div>
+    <div class="col-sm-8" style="text-align:left; margin-left:40px">
+      <noto style="font-size:24px; color:#515151;">
+        머신러닝을 사용한 사용자 분석<br>
+      </noto>
+      <div style="margin-bottom:23px;">
+      </div>
+      <noto style="font-size:16px; line-height:28px; color:#5D5B5B;">
+        CloudBread 는 실제 게임을 운영하는 분들의 성공을 위해 사용자 분석 알고리즘을 개발하고 있습
+        니다. 머신러닝을 활용하여 알고리즘을 개발을 진행하고 있으며, 추후에 추가될 예정입니다.
+       </noto>
+    </div>
+    <div class="col-sm-1">
     </div>
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2><br>
-  <h4>What we have created</h4>
+<!-- Third paragraph -->
+<!-- Container (Tutorial Section) -->
+<div id="tutorials" class="container-fluid" style="background-color:#F6F6F6;">
+  <div class="row">
+    <div class="col-sm-4 col-xs-12">
+      <div style="margin: 100px 0 76px 10px; text-align:left;">
+        <noto style="font-size:26px; line-height:36px; color:#555F94; font-weight:700;">
+          CloudBread 튜토리얼
+        </noto>
+      </div>
+    </div>
+  </div>
   <div class="row text-center slideanim">
     <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
+      <div class="thumbnail round-panel">
+        <img src="images/tutorial-1.png" alt="Introduce" width="400" height="300"
+          style="border-top-left-radius:10px; border-top-right-radius:10px;">
+        <p><strong>Introduce</strong></p>
+        <p>클라우드 브래드 소개 및 배포</p>
+        <hr>
+        <a class="tuto_btn" href="." role="button" style="margin:10px;">
+          <span>Git wiki 바로가기</span>
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
+      <div class="thumbnail round-panel">
+        <img src="images/interview.png" alt="Interview" width="400" height="300"
+          style="border-top-left-radius:10px; border-top-right-radius:10px;">
+        <p><strong>Interview</strong></p>
+        <p>클라우드 브래드를 사용한 대표님들의 인터뷰</p>
+        <hr>
+        <a class="tuto_btn" href="." role="button" style="margin:10px;">
+          <span>Youtube 바로가기</span>
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
+      <div class="thumbnail round-panel">
+        <img src="images/flappy.png" alt="Example" width="400" height="300"
+          style="border-top-left-radius:10px; border-top-right-radius:10px;">
+        <p><strong>Example</strong></p>
+        <p>클라우드 브래드를 사용하여 게임 만들기</p>
+        <hr>
+        <a class="tuto_btn" href="." role="button" style="margin:10px;">
+          <span>Git wiki 바로가기</span>
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
       </div>
     </div>
-  </div><br>
+  </div>
 
-  <h2>What our customers say</h2>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail round-panel">
+        <img src="images/HTTP_.jpeg" alt="Communication" width="400" height="300"
+          style="border-top-left-radius:10px; border-top-right-radius:10px;">
+        <p><strong>Communication</strong></p>
+        <p>Unity와 클라우드 브래드간 HTTP 통신</p>
+        <hr>
+        <a class="tuto_btn" href="." role="button" style="margin:10px;">
+          <span>Youtube 바로가기</span>
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail round-panel">
+        <img src="images/unity.jpeg" alt="UnitySDK" width="400" height="300"
+          style="border-top-left-radius:10px; border-top-right-radius:10px;">
+        <p><strong>UnitySDK</strong></p>
+        <p>UnitySDK를 클라우드 브래드에 적용하기</p>
+        <hr>
+        <a class="tuto_btn" href="." role="button" style="margin:10px;">
+          <span>Git wiki 바로가기</span>
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail round-panel">
+        <img src="images/db.jpeg" alt="Database" width="400" height="300"
+          style="border-top-left-radius:10px; border-top-right-radius:10px;">
+        <p><strong>Database</strong></p>
+        <p>클라우드 브래드로 DB스키마 사용하기</p>
+        <hr>
+        <a class="tuto_btn" href="." role="button" style="margin:10px;">
+          <span>Git wiki 바로가기</span>
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="review" class="container-fluid" style="background-color:#F4F4F4;">
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div style="margin: 100px 0 0 10px; text-align:left;">
+        <noto style="font-size:26px; line-height:36px; color:#555F94; font-weight:700;">
+          CloudBread 후기
+        </noto>
+      </div>
+    </div>
+  </div>
+</div>
+<div style="background-color:#F4F4F4;">
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -354,137 +599,82 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+  <div style="padding-top:150px;"/>
 </div>
 
-<!-- Container (Pricing Section) -->
-<div id="pricing" class="container-fluid">
-  <div class="text-center">
-    <h2>Pricing</h2>
-    <h4>Choose a payment plan that works for you</h4>
-  </div>
-  <div class="row slideanim">
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Basic</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$19</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Pro</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>50</strong> Lorem</p>
-          <p><strong>25</strong> Ipsum</p>
-          <p><strong>10</strong> Dolor</p>
-          <p><strong>5</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$29</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Premium</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>100</strong> Lorem</p>
-          <p><strong>50</strong> Ipsum</p>
-          <p><strong>25</strong> Dolor</p>
-          <p><strong>10</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$49</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+<!-- Last paragraph -->
+<!-- Container (Member Section) -->
+<div id="members" class="container-fluid" style="background-color:#EFEFEF">
+  <div style="text-align:Left; margin-top:100px; margin-left:10px; margin-bottom:123px;">
+    <noto style="font-size:24px; color:#2A69B2;">CloudBread를 함께하는 사람들</noto>
+  </div>
+  <div class="row" style="text-align:left;">
+    <div class="col-sm-3 slideanim" style="text-align:center;">
+      <img src="images/4-1.png"/>
     </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
+    <div class="col-sm-3 slideanim">
+      <noto style="font-size:30px; color:#2A69B2; margin-bottom:17px;">
+        김대우
+      </noto><br>
+      <noto style="font-size:13px; color:#484848; line-height:36px;">
+        CloudBread 프로젝트 Founder<br>
+        CloudBread 프로젝트 Core 개발 중<br>
+        웹과 개발자의 일상을 더 재미있게 만드는 일에 관심이 많습니다.
+      </noto>
+    </div>
+    <div class="col-sm-3 slideanim" style="text-align:center;">
+      <img src="images/4-2.png"/>
+    </div>
+    <div class="col-sm-3 slideanim">
+      <noto style="font-size:30px; color:#2A69B2; margin-bottom:17px;">
+        홍윤석
+      </noto><br>
+      <noto style="font-size:13px; color:#484848; line-height:36px;">
+        CloudBread 프로젝트 Contributor<br>
+        Core 및 Unity, Unreal, iOS, Android 에서 지원되는 클라이언트용 리소스 개발.<br>
+        CloudBread Admin Web 프로젝트 개발중
+      </noto>
+    </div>
+  </div>
+
+  <div class="row" style="text-align:left; margin-top:124px; margin-bottom:124px;">
+    <div class="col-sm-3 slideanim" style="text-align:center;">
+      <img src="images/4-3.png"/>
+    </div>
+    <div class="col-sm-3 slideanim">
+      <noto style="font-size:30px; color:#2A69B2; margin-bottom:17px;">
+        김정현
+      </noto><br>
+      <noto style="font-size:13px; color:#484848; line-height:36px;">
+        CloudBread 프로젝트 Contributor<br>
+        ARM을 통한 리소스 배포 및 BI 및 머신러닝을
+        통한 데이터 분석 서비스 개발.<br>
+        CloudBread Admin Web 프로젝트 개발 중
+      </noto>
+    </div>
+    <div class="col-sm-3 slideanim" style="text-align:center;">
+      <img src="images/4-4.png"/>
+    </div>
+    <div class="col-sm-3 slideanim">
+      <noto style="font-size:30px; color:#2A69B2; margin-bottom:17px;">
+        한바환
+      </noto><br>
+      <noto style="font-size:13px; color:#484848; line-height:36px;">
+        CloudBread 프로젝트 Contributor<br>
+        실시간 Socket.io 통신 서비스 구축.<br>
+        ES2015 Node.js 웹 프론트엔드 / 백엔드 개발.<br>
+        CloudBread Admin Web 프로젝트 개발 중
+      </noto>
     </div>
   </div>
 </div>
-
-<div id="googleMap" style="height:400px;width:100%;"></div>
-
-<!-- Add Google Maps -->
-<script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-
-function initialize() {
-var mapProp = {
-  center:myCenter,
-  zoom:12,
-  scrollwheel:false,
-  draggable:false,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-  position:myCenter,
-  });
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
 
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+  <p>Go to the CloudBread main page. <br><a href="http://aka.ms/cbp">'aka.ms/cbp'</a></p>
 </footer>
 
 <script>
