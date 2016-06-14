@@ -41,7 +41,7 @@
 
     <div class="row" style="margin-bottom:50px;">
       <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6" style="text-align:center;">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6" style="text-align:center; padding-top:50px;">
         <img src="images/type_web-18.svg"/>
         <!--
         <appleSD style="font-size:38px; color:#F3F3F3; letter-spacing:0.92px; line-height:59px;">
@@ -60,15 +60,15 @@
       <div class="col-xs-0 col-sm-1 col-md-2 col-lg-3"></div>
     </div>
     <button class="btn btn-lg"
-      onclick="location.href='https://www.facebook.com/groups/cloudBreadProject/'"
+      onclick="window.open('https://www.facebook.com/groups/cloudBreadProject/')"
       style="width:234px;">페이스북 공식채널</button>
     <span style="margin-left:13px;"></span>
     <button class="btn btn-lg"
-      onclick="location='https://www.youtube.com/channel/UCDlkeUYAb851WkHMRzchLzw'"
+      onclick="window.open('https://www.youtube.com/channel/UCDlkeUYAb851WkHMRzchLzw')"
       style="width:234px;">유튜브 공식채널</button>
     <span style="margin-left:13px;"></span>
     <button class="btn btn-lg"
-      onclick="location='https://github.com/CloudBreadProject'"
+      onclick="window.open('https://github.com/CloudBreadProject')"
       style="width:234px;">Github 프로젝트</button>
       <span style="margin-left:13px;"></span>
 </div>
@@ -77,7 +77,7 @@
 <!-- First paragraph -->
 <div id="about" class="container-fluid" style="background-color:#F6F6F6;">
   <div class="row">
-    <div class="col-sm-4 col-xs-12">
+    <div class="col-sm-12 col-xs-12">
       <div style="margin: 94px 0 102px 40px; text-align:left;">
         <noto style="font-size:26px; line-height:36px; color:#555F94; font-weight:700;">
           CloudBread 란?
@@ -134,7 +134,7 @@
 
 <div id="services" class="container-fluid" style="background-color:#F3F3F3">
   <div class="row">
-    <div class="col-md-10">
+    <div class="col-md-12">
       <div style="margin: 104px 0 102px 40px; text-align:left;">
         <noto style="font-size:26px; line-height:36px; color:#555F94; font-weight:700;">
           CloudBread 의 특징
@@ -147,13 +147,13 @@
   <div class="row">
     <div class="col-md-4 col-sm-6 slideanim">
       <div class="single-more-features">
-        <img src="images/2-1.png" style="width:55px; height:80px;"/>
+        <img src="images/2-4.png" style="width:55px; height:80px;"/>
         <h6 style="font-size:24px; color:#515151;">
-          <noto>게임 보안 인증 기능</noto>
+          <noto>다양한 프로젝트 진행</noto>
         </h6>
         <p style="font-size:16px; line-height:28px; color:#5D5B5B;">
           <noto>
-            CloudBread는 Azure를 백본으로 사용하므로, Azure에서 제공하는 보안 기능을 사용가능.
+            오픈소스 프로젝트로 CloudBread 에서 여러 프로젝트가 진행중.
           </noto>
         </p>
       </div>
@@ -189,13 +189,13 @@
 
     <div class="col-md-4 col-sm-6 slideanim">
       <div class="single-more-features">
-        <img src="images/2-4.png" style="width:55px; height:80px;"/>
+        <img src="images/2-1.png" style="width:55px; height:80px;"/>
         <h6 style="font-size:24px; color:#515151;">
-          <noto>다양한 프로젝트 진행</noto>
+          <noto>게임 보안 인증 기능</noto>
         </h6>
         <p style="font-size:16px; line-height:28px; color:#5D5B5B;">
           <noto>
-            오픈소스 프로젝트로 CloudBread 에서 여러 프로젝트가 진행중.
+            CloudBread는 Azure를 백본으로 사용하므로, Azure에서 제공하는 보안 기능을 사용가능.
           </noto>
         </p>
       </div>
@@ -235,8 +235,8 @@
 <!-- Container (Tutorial Section) -->
 <div id="tutorials" class="container-fluid" style="background-color:#F6F6F6;">
   <div class="row">
-    <div class="col-sm-4 col-xs-12">
-      <div style="margin: 100px 0 76px 10px; text-align:left;">
+    <div class="col-sm-12 col-xs-12">
+      <div style="margin: 100px 0 76px 40px; text-align:left;">
         <noto style="font-size:26px; line-height:36px; color:#555F94; font-weight:700;">
           CloudBread 튜토리얼
         </noto>
@@ -251,7 +251,8 @@
         <p><strong>Introduce</strong></p>
         <p>클라우드 브래드 소개 및 배포</p>
         <hr>
-        <a class="tuto_btn" href="https://github.com/CloudBreadProject/CloudBread/wiki"
+        <a class="tuto_btn" href="#"
+          onClick="window.open('https://github.com/CloudBreadProject/CloudBread/wiki')"
           role="button" style="margin:10px;">
           <span>Git wiki 바로가기</span>
           <span class="glyphicon glyphicon-chevron-right"></span>
@@ -265,7 +266,8 @@
         <p><strong>Interview</strong></p>
         <p>클라우드 브래드를 사용한 대표님들의 인터뷰</p>
         <hr>
-        <a class="tuto_btn" href="https://www.youtube.com/watch?v=x1kuy024RyI"
+        <a class="tuto_btn" href="#"
+          onClick="window.open('https://www.youtube.com/watch?v=x1kuy024RyI')"
           role="button" style="margin:10px;">
           <span>Youtube 바로가기</span>
           <span class="glyphicon glyphicon-chevron-right"></span>
@@ -279,7 +281,8 @@
         <p><strong>Example</strong></p>
         <p>클라우드 브래드를 사용하여 게임 만들기</p>
         <hr>
-        <a class="tuto_btn" href="https://github.com/CloudBreadProject/CloudBread/wiki/CloudBread를-사용하여-Flappy-Bird-게임에-서버-구축---0.-준비과정"
+        <a class="tuto_btn" href="#"
+          onClick="window.open('https://github.com/CloudBreadProject/CloudBread/wiki/CloudBread를-사용하여-Flappy-Bird-게임에-서버-구축---0.-준비과정')"
           role="button" style="margin:10px;">
           <span>Git wiki 바로가기</span>
           <span class="glyphicon glyphicon-chevron-right"></span>
@@ -296,7 +299,8 @@
         <p><strong>Communication</strong></p>
         <p>Unity와 클라우드 브래드간 HTTP 통신</p>
         <hr>
-        <a class="tuto_btn" href="https://www.youtube.com/watch?v=umWGSm0h8kE"
+        <a class="tuto_btn" href="#"
+          onClick="window.open('https://www.youtube.com/watch?v=umWGSm0h8kE')"
           role="button" style="margin:10px;">
           <span>Youtube 바로가기</span>
           <span class="glyphicon glyphicon-chevron-right"></span>
@@ -310,7 +314,8 @@
         <p><strong>UnitySDK</strong></p>
         <p>UnitySDK를 클라우드 브래드에 적용하기</p>
         <hr>
-        <a class="tuto_btn" href="https://github.com/CloudBreadProject/CloudBread/wiki/How-to-use-Unity-SDK-kor"
+        <a class="tuto_btn" href="#"
+          onClick="window.open('https://github.com/CloudBreadProject/CloudBread/wiki/How-to-use-Unity-SDK-kor')"
           role="button" style="margin:10px;">
           <span>Git wiki 바로가기</span>
           <span class="glyphicon glyphicon-chevron-right"></span>
@@ -324,7 +329,8 @@
         <p><strong>Database</strong></p>
         <p>클라우드 브래드로 DB스키마 사용하기</p>
         <hr>
-        <a class="tuto_btn" href="https://github.com/CloudBreadProject/CloudBread/wiki/CloudBread-database-design"
+        <a class="tuto_btn" href="#"
+          onClick="window.open('https://github.com/CloudBreadProject/CloudBread/wiki/CloudBread-database-design')"
           role="button" style="margin:10px;">
           <span>Git wiki 바로가기</span>
           <span class="glyphicon glyphicon-chevron-right"></span>
@@ -337,8 +343,8 @@
 
 <div id="review" class="container-fluid" style="background-color:#F4F4F4;">
   <div class="row slideanim">
-    <div class="col-sm-4 col-xs-12">
-      <div style="margin: 100px 0 0 10px; text-align:left;">
+    <div class="col-sm-12 col-xs-12">
+      <div style="margin: 100px 0 0 40px; text-align:left;">
         <noto style="font-size:26px; line-height:36px; color:#555F94; font-weight:700;">
           CloudBread 후기
         </noto>
@@ -378,17 +384,23 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <div style="padding-top:150px;"/>
+  <div style="padding-top:150px;"/></div>
 </div>
 
 
 <!-- Last paragraph -->
 <!-- Container (Member Section) -->
-<div id="members" class="container-fluid" style="background-color:#EFEFEF; padding:0 55px 0 25px;">
-  <div style="text-align:Left; margin-top:100px; margin-left:10px; margin-bottom:123px;">
-    <noto style="font-size:24px; color:#2A69B2;">CloudBread를 함께하는 사람들</noto>
+<div id="members" class="container-fluid" style="background-color:#EFEFEF;">
+  <div class="row">
+    <div class="col-sm-12 col-xs-12">
+      <div style="margin: 100px 0 80px 40px; text-align:left;">
+        <noto style="font-size:26px; line-height:36px; color:#555F94; font-weight:700;">
+          CloudBread를 함께하는 사람들
+        </noto>
+      </div>
+    </div>
   </div>
-  <div class="row" style="text-align:left;">
+  <div class="row" style="text-align:left; padding:0 55px 0 25px;">
     <div class="col-xs-1 col-sm-4 col-md-4 col-lg-3 slideanim" style="text-align:center;">
       <img src="images/4-1.png"/>
     </div>
